@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="shortcut icon" href="image/4328c30611e0c3a5556fa1d4cb35dae7.png" type="image/x-icon">
+</head>
+<body>
+    <div class="head">
+        
+    
+    <div class="container">
+        
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" class="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value =''" class="operator">
+                    <input type="button" value="DE" onclick="display.value=display.value.toString().slice(0,-1)" class="operator">
+                    <input type="button" value="." onclick="display.value +='.'" class="arithematic">
+                    <input type="button" value="/" onclick="display.value +='/'" class="arithematic">
+            
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value +='7'" class="onclick" >
+                    <input type="button" value="8" onclick="display.value +='8'" class="onclick">
+                    <input type="button" value="9" onclick="display.value +='9'" class="onclick">
+                    <input type="button" value="*" onclick="display.value +='*'" class="arithematic">
+            
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value +='4'" class="onclick">
+                    <input type="button" value="5" onclick="display.value +='5'" class="onclick">
+                    <input type="button" value="6" onclick="display.value +='6'" class="onclick">
+                    <input type="button" value="-" onclick="display.value +='-'" class="arithematic">
+            
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value +='1'" class="onclick">
+                    <input type="button" value="2" onclick="display.value +='2'" class="onclick">
+                    <input type="button" value="3" onclick="display.value +='3'" class="onclick">
+                    <input type="button" value="+" onclick="display.value +='+'" class="arithematic">
+            
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value +='00'" class="onclick">
+                    <input type="button" value="0" onclick="display.value +='0'" class="onclick">
+                    <input type="button" value="=" onclick="display.value=eval(display.value)" class="equal">
+            
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

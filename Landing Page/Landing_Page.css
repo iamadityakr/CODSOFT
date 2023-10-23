@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body {
+    background: #212531;
+    margin: 0;
+}
+
+header {
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+/* styling the logo  */
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #666;
+    display: inline-block;
+}
+
+.logo i {
+    padding-right: 2rem;
+    color: black;
+}
+
+.order {
+    text-shadow: -1px -1px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow, 1px 1px yellow;
+}
+
+/* Stying the navbar container */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    color: black;
+    height: 65px;
+    padding: 1em;
+    font-size: 25px;
+}
+
+.menu li:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+}
+
+.menu>li {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+/*Container for menu button  */
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+/*  Creating the hamburger menu button  */
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: black;
+    position: absolute;
+    height: 6px;
+    width: 32px;
+    border-radius: 3px;
+    color: white;
+}
+
+.menu-button::before {
+    content: "";
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: "";
+    margin-top: 8px;
+}
